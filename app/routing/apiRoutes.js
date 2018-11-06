@@ -2,7 +2,6 @@
 // =============================================================
 
 var friendsData = require("../data/friends");
-var compatibleData = require("../data/compatible");
 
 
 // Routing

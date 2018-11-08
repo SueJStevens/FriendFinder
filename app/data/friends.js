@@ -69,7 +69,7 @@ var friendsData = [
   },
   {
     "name": "Marvin the Martian",
-    "photo": "https://en.wikipedia.org/wiki/File:Marvin_the_Martian.svg",
+    "photo": "https://upload.wikimedia.org/wikipedia/en/thumb/d/d5/Marvin_the_Martian.svg/482px-Marvin_the_Martian.svg.png",
     "scores": [4, 5, 5, 2, 3, 3, 4, 3, 5, 4]
   },
   {
@@ -125,34 +125,12 @@ var friendsData = [
   {
     "name": "Dr. Red Barron Who",
     "photo": "https://www.feistees.com/images/uploads/2015/06/snoopy-red-baron-doctor-who-peanuts-t-shirt.jpg",
-    "scores": [
-    "5",
-    "1",
-    "3",
-    "1",
-    "5",
-    "5",
-    "3",
-    "1",
-    "2",
-    "2"
-    ]
+    "scores": [5, 1, 3, 1, 5, 5, 3, 1, 2, 2]
   },
   {
-    "name": "Sue J. Stevens",
+    "name": "Sue Stevens",
     "photo":"https://user-images.githubusercontent.com/39141985/48185235-3f2d7080-e2e9-11e8-99a5-f8634ec8548b.png",
-    "scores": [
-    "5",
-    "1",
-    "3",
-    "3",
-    "5",
-    "5",
-    "4",
-    "2",
-    "3",
-    "3"
-    ]
+    "scores": [5, 1, 3, 3, 5, 5, 4, 2, 3, 3]
   }  
 ];
 

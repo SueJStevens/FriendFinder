@@ -495,123 +495,123 @@
   </div>
 
 
-  <style>
+<style>
 
-    @import url('https://fonts.googleapis.com/css?family=Bilbo+Swash+Caps|Roboto');
+  @import url('https://fonts.googleapis.com/css?family=Bilbo+Swash+Caps|Roboto');
 
-        html,
-      body {
-        height: 100%;
-        width: 100%;
-        margin: 0;
-      }
-  
-      .custom-border {
-        border: 1px solid #ced4da;
-        border-radius: .25rem;
-        transition: border-color .15s ease-in-out, box-shadow .15s ease-in-out;
-      }
-  
-      .custom-radios div {
-        display: inline-block;
-      }
-  
-      .custom-radios input[type="radio"] {
-        display: none;
-      }
-  
-      .custom-radios input[type="radio"]+label {
-        color: whitesmoke;
-        font-family: Arial, sans-serif;
-        font-size: 1rem;
-      }
-  
-      .custom-radios input[type="radio"]+label span {
-        display: inline-block;
-        width: 40px;
-        height: 40px;
-        margin: 0 4px 0 0;
-        vertical-align: middle;
-        cursor: pointer;
-        border-radius: 50%;
-        border: 2px solid #FFFFFF;
-        box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.33);
-        background-repeat: no-repeat;
-        background-position: center;
-        text-align: center;
-        line-height: 36px;
-      }
-  
-      .custom-radios input[type="radio"]+label span img {
-        opacity: 0;
-        transition: all .3s ease;
-      }
-  
-      .custom-radios input[type="radio"].color-1+label span {
-        background-color: #F23b36;
-      }
-  
-      .custom-radios input[type="radio"].color-2+label span {
-        background-color: #4B91F3;
-      }
-  
-      .custom-radios input[type="radio"].color-3+label span {
-        background-color: #F8b016;
-      }
-  
-      .custom-radios input[type="radio"].color-4+label span {
-        background-color: #B625F4;
-      }
-  
-      .custom-radios input[type="radio"].color-5+label span {
-        background-color: #31A652;
-      }
-  
-      .custom-radios input[type="radio"].color-1:checked+label span {
-        background-color: #F23b36;
-      }
-  
-      .custom-radios input[type="radio"].color-2:checked+label span {
-        background-color: #4B91F3;
-      }
-  
-      .custom-radios input[type="radio"].color-3:checked+label span {
-        background-color: #F8b016;
-      }
-  
-      .custom-radios input[type="radio"].color-4:checked+label span {
-        background-color: #B625F4;
-      }
-  
-      .custom-radios input[type="radio"].color-5:checked+label span {
-        background-color: #31A652;
-      }
-  
-      .custom-radios input[type="radio"]:checked+label span {
-        opacity: 1;
-        background: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/242518/check-icn.svg) center center no-repeat;
-        width: 40px;
-        height: 40px;
-        display: inline-block;
-  
-      }
+    html,
+  body {
+    height: 100%;
+    width: 100%;
+    margin: 0;
+  }
+
+  .custom-border {
+    border: 1px solid #ced4da;
+    border-radius: .25rem;
+    transition: border-color .15s ease-in-out, box-shadow .15s ease-in-out;
+  }
+
+  .custom-radios div {
+    display: inline-block;
+  }
+
+  .custom-radios input[type="radio"] {
+    display: none;
+  }
+
+  .custom-radios input[type="radio"]+label {
+    color: whitesmoke;
+    font-family: Arial, sans-serif;
+    font-size: 1rem;
+  }
+
+  .custom-radios input[type="radio"]+label span {
+    display: inline-block;
+    width: 40px;
+    height: 40px;
+    margin: 0 4px 0 0;
+    vertical-align: middle;
+    cursor: pointer;
+    border-radius: 50%;
+    border: 2px solid #FFFFFF;
+    box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.33);
+    background-repeat: no-repeat;
+    background-position: center;
+    text-align: center;
+    line-height: 36px;
+  }
+
+  .custom-radios input[type="radio"]+label span img {
+    opacity: 0;
+    transition: all .3s ease;
+  }
+
+  .custom-radios input[type="radio"].color-1+label span {
+    background-color: #F23b36;
+  }
+
+  .custom-radios input[type="radio"].color-2+label span {
+    background-color: #4B91F3;
+  }
+
+  .custom-radios input[type="radio"].color-3+label span {
+    background-color: #F8b016;
+  }
+
+  .custom-radios input[type="radio"].color-4+label span {
+    background-color: #B625F4;
+  }
+
+  .custom-radios input[type="radio"].color-5+label span {
+    background-color: #31A652;
+  }
+
+  .custom-radios input[type="radio"].color-1:checked+label span {
+    background-color: #F23b36;
+  }
+
+  .custom-radios input[type="radio"].color-2:checked+label span {
+    background-color: #4B91F3;
+  }
+
+  .custom-radios input[type="radio"].color-3:checked+label span {
+    background-color: #F8b016;
+  }
+
+  .custom-radios input[type="radio"].color-4:checked+label span {
+    background-color: #B625F4;
+  }
+
+  .custom-radios input[type="radio"].color-5:checked+label span {
+    background-color: #31A652;
+  }
+
+  .custom-radios input[type="radio"]:checked+label span {
+    opacity: 1;
+    background: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/242518/check-icn.svg) center center no-repeat;
+    width: 40px;
+    height: 40px;
+    display: inline-block;
+
+  }
 
 
-.modal-content {
-  background-color: #445976;
-  color: whitesmoke
-}
+  .modal-content {
+    background-color: #445976;
+    color: whitesmoke
+  }
 
-.modal-title {
-  font-family: 'Bilbo Swash Caps', cursive;
-  font-size: 3rem;
-  letter-spacing: 0.5rem;
-}
+  .modal-title {
+    font-family: 'Bilbo Swash Caps', cursive;
+    font-size: 3rem;
+    letter-spacing: 0.5rem;
+  }
 
-.modal-body {
-  font-family: 'Roboto', sans-serif;
-  font-style: italic;
-}
+  .modal-body {
+    font-family: 'Roboto', sans-serif;
+    font-style: italic;
+  }
 
   .imgContainer {
     height: 200px;
@@ -626,7 +626,6 @@
     max-width: 200px;
     height: auto;
   }
-
 
   a {
     text-decoration: none;
@@ -662,83 +661,77 @@
 
 </style>
 
-  <script type="text/javascript">
+<script type="text/javascript">
 
-    // Capture the form inputs
-    $("#submit").on("click", function (event) {
-      event.preventDefault();
-      // Form validation
+  // Capture the form inputs
+  $("#submit").on("click", function (event) {
+    event.preventDefault();
+    // Form validation
 
-      function validateForm() {
-        //here we are setting the flag to true and then it will flip to false once it hits an invalid entry.
-        var isValid = true;
-        //validate the inputs
-        $(".form-control").each(function () {
-          //console.log($(this).val() === "");
-          if ($(this).val() === "") {
-            isValid = false;
-          }
-        });
-        //validate the radio buttons
-        for (j = 1; j <= 10; j++) {
-          if (!validateRadio(document.forms["surveyForm"]["q" + j])) {
-            //console.log(document.forms["surveyForm"]["q" + j].value);
-            //Do something here to show what questions were not answered
-            isValid = false;
-          }
+    function validateForm() {
+      //here we are setting the flag to true and then it will flip to false once it hits an invalid entry.
+      var isValid = true;
+      //validate the inputs
+      $(".form-control").each(function () {
+        if ($(this).val() === "") {
+          isValid = false;
         }
-        return isValid;
+      });
+      //validate the radio buttons
+      for (j = 1; j <= 10; j++) {
+        if (!validateRadio(document.forms["surveyForm"]["q" + j])) {
+          isValid = false;
+        }
+      }
+      return isValid;
+    };
+
+    function validateRadio(radios) {
+      var test = false;
+      for (i = 0; i < radios.length; i++) {
+        if (radios[i].checked) {
+          test = true;
+        }
+      } //end loop
+      return test;
+    } //end function
+
+
+
+    // If all required fields are filled
+    if (validateForm()) {
+      // Create an object for the user"s data
+      var userData = {
+        name: $("#name").val(),
+        photo: $("#photo").val(),
+        scores: []
+      };
+      for (j = 1; j <= 10; j++) {
+        userData.scores.push(document.forms["surveyForm"]["q" + j].value);
       };
 
-      function validateRadio(radios) {
-        var test = false;
-        for (i = 0; i < radios.length; i++) {
-          if (radios[i].checked) {
-            test = true;
-          }
-        } //end loop
-        return test;
-      } //end function
 
+      // AJAX post the data to the friends API.
+      $.post("/api/friends", userData, function (data) {
+        // Grab the result from the AJAX post so that the best match's name and photo are displayed.
+        $("#match-name").text(data.name);
+        $("#match-img").attr("src", data.photo);
+        //Put the user into the model too
+        $("#user-name").text(userData.name);
+        $("#user-img").attr("src", userData.photo);
+        // Show the modal with the best match
+        $("#results-modal").modal("toggle");
+      });
+    } else {
+      alert("Please fill out all fields before submitting!");
+    }
+  }); //end validation
 
-
-      // If all required fields are filled
-      if (validateForm()) {
-        // Create an object for the user"s data
-        var userData = {
-          name: $("#name").val(),
-          photo: $("#photo").val(),
-          scores: []
-        };
-        for (j = 1; j <= 10; j++) {
-          userData.scores.push(document.forms["surveyForm"]["q" + j].value);
-        };
-        //console.log(userData.scores);
-
-
-        //console.log("This is the User Data:" + userData[0].scores[0]);
-        // AJAX post the data to the friends API.
-        $.post("/api/friends", userData, function (data) {
-          // Grab the result from the AJAX post so that the best match's name and photo are displayed.
-          $("#match-name").text(data.name);
-          $("#match-img").attr("src", data.photo);
-          //Put the user into the model too
-          $("#user-name").text(userData.name);
-          $("#user-img").attr("src", userData.photo);
-          // Show the modal with the best match
-          $("#results-modal").modal("toggle");
-        });
-      } else {
-        alert("Please fill out all fields before submitting!");
-      }
-    }); //end validation
-
-    $('body').on('hide.bs.modal', '.modal', function () {
-      //When the modal is closed, clear the form
-      $('#reset').trigger('click');
-      //console.log("Model Hidden");
-    });
-  </script>
+  $('body').on('hide.bs.modal', '.modal', function () {
+    //When the modal is closed, clear the form
+    $('#reset').trigger('click');
+  });
+</script>
 
 </body>
 

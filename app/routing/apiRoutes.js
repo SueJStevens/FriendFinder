@@ -38,7 +38,7 @@ module.exports = function (app) {
       var dif = 0;
       for (var j = 0; j < friendsData[i].scores.length; j++) {
         //Identify the absolute value of difference between Friends Survey 
-        dif = (Math.abs(parseint(userScores[j]) - parseint(friendsData[i].scores[j])));
+        dif = Math.abs(parseInt(userScores[j])) - parseInt(friendsData[i].scores[j]);
         dif += dif;
       }
       if (dif < totalDifference) {

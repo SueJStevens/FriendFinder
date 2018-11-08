@@ -491,6 +491,28 @@
     </div>
   </div>
 
+  <!--Validation Error Modal-->
+  <!-- Modal -->
+  <div class="modal fade" id="validation-modal" tabindex="-1" role="dialog" aria-labelledby="validation-modalLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="validation-modalLabel">Error!</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+            <p>Something went wrong!</p>
+            <p>Please complete all questions and include your name and photo before submitting.</p>
+        </div>
+        <div class="modal-footer">
+          <button id="closeValidModal" type="button" class="btn btn-sm btn-primary" data-dismiss="modal">Close</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
 
 <style>
 
@@ -720,7 +742,8 @@
         $("#results-modal").modal("toggle");
       });
     } else {
-      alert("Please fill out all fields before submitting!");
+      // Show the modal with the best match
+      $("#validation-modal").modal("toggle");
     }
   }); //end validation
 

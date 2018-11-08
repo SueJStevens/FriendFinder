@@ -1,5 +1,4 @@
-# It's A Match!
-# Friend Finder Application
+# It's A Match! Friend Finder Application
 
 ## Description
 *It's A Match!*, a full-stack site, implements friend matching based on users'  responses to a ten question survey. The user responds to questions with values from 1 (Strongly Disagree) to 5 (Strongly Agree). When the survey is submitted, the site will take in the results and compare the user's answers with those from other users.  An existing user record closest to the current user's responses is found and returned. The app will then display the name and picture of the user with the best overall match.  The closest set of user responses is defined as the set with the lowest absolute difference for all ten questions combined.

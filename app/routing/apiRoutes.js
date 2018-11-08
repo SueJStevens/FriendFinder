@@ -3,15 +3,27 @@
 
 var friendsData = require("../data/friends");
 
+var bodyParser = require('body-parser'); 
+
+// app.post('/CAForm', function(req, res) {
+//   res.send(req.body.optradio);
+// });
+
+
 
 // Routing
 // =============================================================
 module.exports = function (app) {
+  app.use(bodyParser.json()); // to support JSON bodies
+  app.use(bodyParser.urlencoded({ extended: true })); // to support URL-encoded bodies
+  
   app.get("/api/friends", function (req, res) {
     res.json(friendsData);
   }); //close get request
 
   app.post("/api/friends", function (req, res) {
+    console.log("New Test"+req.body.name);
+
     //Convert each user's results into a simple array of numbers (ex: `[5, 1, 4, 4, 5, 1, 2, 5, 4, 1]`)
     var userScores = (req.body.scores);
 
@@ -48,6 +60,7 @@ module.exports = function (app) {
   
     //Save survey results
     friendsData.push(req.body);
+    console.log(req.body);
 
     // Return the result back to the client in json form
     res.json(result);

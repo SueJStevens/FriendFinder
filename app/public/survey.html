@@ -99,27 +99,27 @@
             <span class="pl-2">(Strongly Disagree)</span>
 
             <div class="ml-4">
-              <input name="q2" type="radio" id="q2-1" class="color-1" value="1">
+              <input name="q2" type="radio" id="q2-1" class="color-1" value=1>
               <label class="m-0 color-1" for="q2-1"><span>1</span></label>
             </div>
 
             <div class="ml-4">
-              <input name="q2" type="radio" id="q2-2" class="color-2" value="2">
+              <input name="q2" type="radio" id="q2-2" class="color-2" value=2>
               <label class="m-0" for="q2-2"><span>2</span></label>
             </div>
 
             <div class="ml-4">
-              <input name="q2" type="radio" id="q2-3" class="color-3" value="3">
+              <input name="q2" type="radio" id="q2-3" class="color-3" value=3>
               <label class="m-0" for="q2-3"><span>3</span></label>
             </div>
 
             <div class="ml-4">
-              <input name="q2" type="radio" id="q2-4" class="color-4" value="4">
+              <input name="q2" type="radio" id="q2-4" class="color-4" value=4>
               <label class="m-0" for="q2-4"><span>4</span></label>
             </div>
 
             <div class="ml-4 mr-4">
-              <input name="q2" type="radio" id="q2-5" class="color-5" value="5">
+              <input name="q2" type="radio" id="q2-5" class="color-5" value=5>
               <label class="m-0" for="q2-5"><span>5</span></label>
             </div>
             <span class="pr-2">(Strongly Agree)</span>
@@ -604,6 +604,7 @@
         //validate the radio buttons
         for (j = 1; j <= 10; j++) {
           if (validateRadio(document.forms["surveyForm"]["q" + j])) {
+            console.log(document.forms["surveyForm"]["q" + j].value);
             isValid = true;
           } else {
             //Do something here to show what questions were not answered
@@ -620,25 +621,23 @@
         return false;
       }
 
+
+
       // If all required fields are filled
       if (validateForm()) {
         // Create an object for the user"s data
         var userData = {
           name: $("#name").val(),
           photo: $("#photo").val(),
-          scores: [
-            $("#q1").val(),
-            $("#q2").val(),
-            $("#q3").val(),
-            $("#q4").val(),
-            $("#q5").val(),
-            $("#q6").val(),
-            $("#q7").val(),
-            $("#q8").val(),
-            $("#q9").val(),
-            $("#q10").val()
-          ]
+          scores: []
         };
+        for (j = 1; j <= 10; j++) {
+            userData.scores.push(document.forms["surveyForm"]["q" + j].value);
+          };
+        console.log(userData.scores);
+
+        
+        //console.log("This is the User Data:" + userData[0].scores[0]);
         // AJAX post the data to the friends API.
         $.post("/api/friends", userData, function (data) {
           // Grab the result from the AJAX post so that the best match's name and photo are displayed.

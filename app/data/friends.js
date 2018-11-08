@@ -121,6 +121,22 @@ var friendsData = [
     "name": "Red Barron",
     "photo": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSOUjUS0UX9TKF9qyZb9XSCDedRn5JkkDq9m_G7qMl-Jbz3qD3peg",
     "scores": [4, 2, 5, 4, 3, 1, 4, 3, 3, 2]
+  },
+  {
+    "name": "Dr. Red Barron Who",
+    "photo": "https://www.feistees.com/images/uploads/2015/06/snoopy-red-baron-doctor-who-peanuts-t-shirt.jpg",
+    "scores": [
+    "5",
+    "1",
+    "3",
+    "1",
+    "5",
+    "5",
+    "3",
+    "1",
+    "2",
+    "2"
+    ]
   }
 ];
 
